@@ -1,0 +1,94 @@
+*, *:before, *:after {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+}
+
+.part1 {
+	width: 50%;
+	margin: auto;
+}
+
+.hex {
+	display: inline-block;
+	vertical-align: middle;
+	position: absolute;
+	width: 100px; 
+	height: 57.74px;
+	background-color: #fff;
+	margin: 28.87px 0 3px -50px;
+	border-left: solid 5px #000;
+	border-right: solid 5px #000;
+	}
+
+	.hex-row .hex {
+	position: relative;
+	margin: 28.87px auto 3px;   				
+	}
+
+.hex:before, .hex:after {
+	content: "";
+	position: absolute;
+	z-index: 1;
+	width: 70.71px;
+	height: 70.71px;
+	-webkit-transform: scaleY(0.5774) rotate(-45deg);
+	-ms-transform: scaleY(0.5774) rotate(-45deg);
+	transform: scaleY(0.5774) rotate(-45deg);
+	background-color: inherit;
+	left: 9.6447px;
+}
+
+.hexred {
+	z-index: 5;
+	border-color: #f00;
+}
+
+.hexred:before, .hexred:after {
+	border-color: #f00 !important;
+}
+
+.hexgreen {
+	z-index: 6;
+	border-color: #0f0;
+}
+
+.hexgreen:before, .hexgreen:after {
+	border-color: #0f0 !important;
+}
+
+.hexblue {
+	z-index: 4;
+	border-color: #00f;
+}
+
+.hexblue:before, .hexblue:after {
+	border-color: #00f !important;
+}
+
+.hex:before {
+	top: -35.3553px;
+	border-top: solid 7.0711px #000;
+	border-right: solid 7.0711px #000;
+}
+
+.hex:after {
+	bottom: -35.3553px;
+	border-bottom: solid 7.0711px #000;
+	border-left: solid 7.0711px #000;
+}
+
+.hex span {
+	position: absolute;
+	width: 100%;
+	margin-top: 20%;
+	margin-left: -50%;
+	z-index: 2;
+}
+
+.hextop {
+	z-index: 9999;
+}
